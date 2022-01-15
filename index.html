@@ -10,6 +10,56 @@
 </head>
 <body>
     <h1>Welcome to Minesweeper</h1>
-    <div class="grid"></div>
+    <div class="create-game">
+        <h2>How to play</h2>
+        <p>
+            Each Minesweeper game starts out with a grid of unmarked squares. 
+            After clicking one of these squares, some of the squares will #
+            disappear, some will remain blank, and some will have numbers on them. 
+            It's your job to use the numbers to figure out which of the blank 
+            squares have mines and which are safe to click.
+        </p>
+
+        <p>
+            Minesweeper is similar to a Sudoku puzzle in that your success is 
+            largely contingent on being able to eliminate possible answers until 
+            only one answer remains.
+        </p>
+
+        <p>
+            The mouse is the only tool that you'll need to play Minesweeper. 
+            The left mouse button is used to click squares that don't contain 
+            mines, while the right mouse button is used to flag squares that 
+            contain mines.
+            On higher difficulties, you'll need to mark squares that you 
+            suspect contain mines until you can verify that they do contain mines.
+
+        </p>
+
+        <p>
+            A number on a square refers to the number of mines that are currently 
+            touching that square. For example, if there are two squares touching 
+            each other and one of the squares has "1" on it, you know that the 
+            square next to it has a mine beneath it.
+        </p>
+        <div>
+            Please choose a difficulty: <br>
+            <input type="radio" id="beginner" name="level" value="Beginner">
+            <label for="beginner">Beginner</label><br>
+            <input type="radio" id="intermediate" name="level" value="Intermediate">
+            <label for="intermediate">Intermediate</label><br>
+            <input type="radio" id="expert" name="level" value="Expert">
+            <label for="expert">Expert</label>
+        </div>
+        <button id="start-game">Start Game</button>
+        
+    </div>
+    <div class="game-on">
+        <div class="status-bar">
+            <h4>Bombs to diffuse</h4>
+            <div id="bombcount"></div>
+        </div>
+        <div class="grid"></div>
+    </div>
 </body>
 </html>
