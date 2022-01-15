@@ -1,14 +1,16 @@
 .grid {
     height: 400px;
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
+    width: fit-content;
+    display: grid;
     background-color: grey;
+    block-size: fit-content;
 }
 
 .grid div {
     height: 40px;
     width: 40px;
+    border: 1px solid #1a1a1a;
+
 }
 
 .checked {
@@ -16,5 +18,5 @@
 }
 
 .bomb {
-    background-color: orange;
+    /* background-color: orange; */
 }

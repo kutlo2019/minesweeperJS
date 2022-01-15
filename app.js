@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let squares = []
     let isGameOver = false
 
+    // Set the grid columns
+    grid.style.gridTemplateColumns = `repeat(${width}, 1fr)`
+
     // create board
     function createBoard() {
         // get shuffled game aray with random bombs
