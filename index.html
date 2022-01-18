@@ -44,7 +44,7 @@
         </p>
         <div>
             Please choose a difficulty: <br>
-            <input type="radio" id="beginner" name="level" value="Beginner">
+            <input type="radio" id="beginner" name="level" value="Beginner" checked>
             <label for="beginner">Beginner</label><br>
             <input type="radio" id="intermediate" name="level" value="Intermediate">
             <label for="intermediate">Intermediate</label><br>
@@ -60,6 +60,11 @@
             <div id="bombcount"></div>
         </div>
         <div class="grid"></div>
+        <div class="play-prompt" style="display: none;">
+            <p>Would you like to play again?</p>
+            <button id="yes">Yes</button>
+            <button id="main">Main Menu</button>
+        </div>
     </div>
 </body>
 </html>

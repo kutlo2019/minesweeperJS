@@ -189,6 +189,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 square.innerHTML = '💣'
             }
         })
+
+        // Ask the user if he wants to play again
+        const play = document.querySelector('.play-prompt')
+        play.style.display = "block"
+
+        yesButton = document.getElementById('yes')
+        mainButton = document.getElementById('main')
+
+        yesButton.addEventListener('click', () => {
+            isGameOver = false
+            squares = []
+            grid.innerHTML = ''
+            createBoard()
+            play.style.display = "none"
+        })
+
+        mainButton.addEventListener('click', () => {
+            isGameOver = false
+            grid.innerHTML = ''
+            document.querySelector('.game-on').style.display = "none"
+            document.querySelector('.create-game').style.display = "flex"
+
+        })
+
+
+
     }
 
     // check for win
